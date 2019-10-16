@@ -1,0 +1,28 @@
+canvas{
+    background-color: black;
+}
+#startBtn, #restartBtn{
+    position: absolute;
+    top: 175px;
+    left: 220px;
+    width: 175px;
+    height: 50px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.gameOver{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    background-color: #000;
+    text-align: center;
+}
+.header{
+    font-size: 50px;
+    color: #fff;
+
+}
