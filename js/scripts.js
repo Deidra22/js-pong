@@ -1,14 +1,14 @@
 const canvas = document.getElementById("pongCanvas"),
     ctx = canvas.getContext("2d"),
-    startBtn = document.getElementById("startBtn"),
-    gameOver = document.getElementById("gameOver"),
-    resetBtn = document.getElementById("restartBtn"),
-    loser = document.getElementById("loser"),
-    winner = document.getElementById("winner");
+    startBtn = document.getElementById("startBtn");
+    // gameOver = document.getElementById("gameOver"),
+    // resetBtn = document.getElementById("restartBtn"),
+    // loser = document.getElementById("loser"),
+    // winner = document.getElementById("winner");
 
-    gameOver.style.display = "none";
+    // gameOver.style.display = "none";
     startBtn.addEventListener("click", startGame);
-    resetBtn.addEventListener("click", resetGame);
+    // resetBtn.addEventListener("click", resetGame);
 
 let hit = new Audio(),
     wall = new Audio(),
@@ -166,17 +166,17 @@ function startGame(){
     }, 1000 / fps);
 }
 
-function win(){
-    if (comp.score == 2){
-        gameOver.style.display = "block";
-        winner.style.display = "none";
+// function win(){
+//     if (comp.score == 2){
+//         gameOver.style.display = "block";
+//         winner.style.display = "none";
 
-    }else if (user.score == 10){
-        alert("You Won!")
-        document.reload()
-        clearInterval(startGame);
-    }
-}
+//     }else if (user.score == 10){
+//         alert("You Won!")
+//         document.reload()
+//         clearInterval(startGame);
+//     }
+// }
 
 // canvas.addEventListener("click", pauseGame);
 
